@@ -8,3 +8,12 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+function result() {
+    let search = document.querySelector("#search");
+    let svarai = document.querySelector("#pounds");
+    let gramai = document.querySelector("#grams");
+    let uncijos = document.querySelector("#ounces");
+    svarai.innerHTML = "Svarais (lb) : " + (search.value * 2.2046).toFixed(4);
+    gramai.innerHTML = "Gramais (g) : " + (search.value * 0.001).toFixed(4);
+    uncijos.innerHTML = "Uncijomis (oz) : " + (search.value * 35.274).toFixed(4);
+  }

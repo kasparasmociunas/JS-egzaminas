@@ -63,3 +63,12 @@ form {
     font-size: 2em;
   }
 }
+#pounds,
+  #grams,
+  #ounces {
+    color: mediumseagreen;
+    font-size: 40px;
+    margin-left: 12rem;
+    height: 40px;
+  }
+}
