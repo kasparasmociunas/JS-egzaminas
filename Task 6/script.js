@@ -21,10 +21,10 @@ const users = [
 ];
 
 
-const getAverageAge = users.reduce((currentTotal, user) => {
+const getUserAverageAge = users.reduce((currentTotal, user) => {
   return user.age + currentTotal;
 }, 0);
-console.log(getAverageAge / users.length); //nebuvo nurodytas reikalavimas apvalinimui todel apvalinimo nera
+console.log(getUserAverageAge / users.length); //nebuvo nurodytas reikalavimas apvalinimui todel apvalinimo nera
 
 
 
