@@ -19,3 +19,19 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+
+const getAverageAge = users.reduce((currentTotal, user) => {
+  return user.age + currentTotal;
+}, 0);
+console.log(getAverageAge / users.length); //nebuvo nurodytas reikalavimas apvalinimui todel apvalinimo nera
+
+
+
+
+
+//! 2
+let names = users.map(function getUsersNames(users) {
+  return users.name;
+});
+console.log(names);
